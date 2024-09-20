@@ -35,7 +35,7 @@ function jumboHeader() {
 
   // Create anchor tag
   var createLink = document.createElement("a");
-  createLink.setAttribute("href", "./menu");
+  createLink.setAttribute("href", "#menuSection");
   createLink.classList.add("menuLayer");
 
   // Create p element
@@ -76,14 +76,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_menu_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/menu.css */ "./src/styles/menu.css");
 /* harmony import */ var _assets_white_arrow_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/white-arrow.svg */ "./src/assets/white-arrow.svg");
 /* harmony import */ var _assets_black_arrow_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/black-arrow.svg */ "./src/assets/black-arrow.svg");
-/* harmony import */ var _assets_background_image_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/background-image.svg */ "./src/assets/background-image.svg");
+/* harmony import */ var _assets_background_menu_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/background_menu.svg */ "./src/assets/background_menu.svg");
 
 
 
 
 function menu() {
-  var menu = ["Appetizers", "Salads", "Entrees", "Desserts", "Drinks", "Wine"];
-  var amountOfMenuItems = [8, 10, 11, 7, 9, 5];
+  var menu = ["Appetizers", "Entrees", "Mains", "Desserts", "Drinks"];
+  var amountOfMenuItems = [8, 10, 11, 7, 9];
   for (var i = 0; i < menu.length; i++) {
     var container = document.querySelector("#menuSection");
 
@@ -198,15 +198,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../src/assets/background-image.svg */ "./src/assets/background-image.svg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../src/assets/white-arrow.svg */ "./src/assets/white-arrow.svg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../src/assets/black-arrow.svg */ "./src/assets/black-arrow.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../../src/assets/background_menu.svg */ "./src/assets/background_menu.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../../src/assets/white-arrow.svg */ "./src/assets/white-arrow.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../../src/assets/black-arrow.svg */ "./src/assets/black-arrow.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `/* Menu */
+:root {
+    --transition: 0.4s ease-in-out;
+}
+
 #menuSection {
     margin-top: 40px;
 }
@@ -215,7 +219,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Menu */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: 1s ease-out;
 }
 
 .menu-layer:hover {
@@ -223,18 +226,26 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Menu */
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--red-color);
-    transition: 0.7s ease;
 }
 
-.menu:hover {
-    height: 120px;
-    color: var(--bg-color);
-    transition: 0.7s ease-in-out;
+.menu-layer:hover:nth-child(1) {
+    background-position-y: 0px;
 }
 
-.menu:hover .arrow {
-    background-image: url(${___CSS_LOADER_URL_REPLACEMENT_1___});
-    transition: 0.7s ease-in-out;
+.menu-layer:hover:nth-child(2) {
+    background-position-y: -120px;
+}
+
+.menu-layer:hover:nth-child(3) {
+    background-position-y: -240px;
+}
+
+.menu-layer:hover:nth-child(4) {
+    background-position-y: -360px;
+}
+
+.menu-layer:hover:nth-child(5) {
+    background-position: bottom;
 }
 
 .menu {
@@ -244,7 +255,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Menu */
     width: 100%;
     height: 80px;
     border-bottom: 1px solid var(--dark-color);
-    transition: 0.5s ease-in-out;
+    transition: var(--transition);
+}
+
+.menu:hover {
+    height: 120px;
+    color: var(--bg-color); 
+}
+
+.menu:hover .arrow {
+    background-image: url(${___CSS_LOADER_URL_REPLACEMENT_1___});
 }
 
 .menu p, .menu h3 {
@@ -256,8 +276,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Menu */
     height: 16px;
     background-image: url(${___CSS_LOADER_URL_REPLACEMENT_2___});
     background-repeat: no-repeat;
-    transition: 0.7s ease-in-out;
-}`, "",{"version":3,"sources":["webpack://./src/styles/menu.css"],"names":[],"mappings":"AAAA,SAAS;AACT;IACI,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,8BAA8B;IAC9B,mBAAmB;IACnB,uBAAuB;AAC3B;;AAEA;IACI,yDAA0D;IAC1D,sBAAsB;IACtB,4BAA4B;IAC5B,kCAAkC;IAClC,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,4BAA4B;AAChC;;AAEA;IACI,yDAAqD;IACrD,4BAA4B;AAChC;;AAEA;IACI,aAAa;IACb,8BAA8B;IAC9B,mBAAmB;IACnB,WAAW;IACX,YAAY;IACZ,0CAA0C;IAC1C,4BAA4B;AAChC;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,yDAAqD;IACrD,4BAA4B;IAC5B,4BAA4B;AAChC","sourcesContent":["/* Menu */\r\n#menuSection {\r\n    margin-top: 40px;\r\n}\r\n\r\n.menu-layer {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    transition: 1s ease-out;\r\n}\r\n\r\n.menu-layer:hover {\r\n    background-image: url('~/src/assets/background-image.svg');\r\n    background-size: cover;\r\n    background-repeat: no-repeat;\r\n    background-color: var(--red-color);\r\n    transition: 0.7s ease;\r\n}\r\n\r\n.menu:hover {\r\n    height: 120px;\r\n    color: var(--bg-color);\r\n    transition: 0.7s ease-in-out;\r\n}\r\n\r\n.menu:hover .arrow {\r\n    background-image: url('~/src/assets/white-arrow.svg');\r\n    transition: 0.7s ease-in-out;\r\n}\r\n\r\n.menu {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    width: 100%;\r\n    height: 80px;\r\n    border-bottom: 1px solid var(--dark-color);\r\n    transition: 0.5s ease-in-out;\r\n}\r\n\r\n.menu p, .menu h3 {\r\n    font-weight: 800;\r\n}\r\n\r\n.arrow {\r\n    width: 20px;\r\n    height: 16px;\r\n    background-image: url('~/src/assets/black-arrow.svg');\r\n    background-repeat: no-repeat;\r\n    transition: 0.7s ease-in-out;\r\n}"],"sourceRoot":""}]);
+    transition: var(--transition);
+}
+`, "",{"version":3,"sources":["webpack://./src/styles/menu.css"],"names":[],"mappings":"AAAA,SAAS;AACT;IACI,8BAA8B;AAClC;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,8BAA8B;IAC9B,mBAAmB;AACvB;;AAEA;IACI,yDAAyD;IACzD,sBAAsB;IACtB,4BAA4B;IAC5B,kCAAkC;AACtC;;AAEA;IACI,0BAA0B;AAC9B;;AAEA;IACI,6BAA6B;AACjC;;AAEA;IACI,6BAA6B;AACjC;;AAEA;IACI,6BAA6B;AACjC;;AAEA;IACI,2BAA2B;AAC/B;;AAEA;IACI,aAAa;IACb,8BAA8B;IAC9B,mBAAmB;IACnB,WAAW;IACX,YAAY;IACZ,0CAA0C;IAC1C,6BAA6B;AACjC;;AAEA;IACI,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,yDAAqD;AACzD;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,yDAAqD;IACrD,4BAA4B;IAC5B,6BAA6B;AACjC","sourcesContent":["/* Menu */\r\n:root {\r\n    --transition: 0.4s ease-in-out;\r\n}\r\n\r\n#menuSection {\r\n    margin-top: 40px;\r\n}\r\n\r\n.menu-layer {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\n.menu-layer:hover {\r\n    background-image: url('~/src/assets/background_menu.svg');\r\n    background-size: cover;\r\n    background-repeat: no-repeat;\r\n    background-color: var(--red-color);\r\n}\r\n\r\n.menu-layer:hover:nth-child(1) {\r\n    background-position-y: 0px;\r\n}\r\n\r\n.menu-layer:hover:nth-child(2) {\r\n    background-position-y: -120px;\r\n}\r\n\r\n.menu-layer:hover:nth-child(3) {\r\n    background-position-y: -240px;\r\n}\r\n\r\n.menu-layer:hover:nth-child(4) {\r\n    background-position-y: -360px;\r\n}\r\n\r\n.menu-layer:hover:nth-child(5) {\r\n    background-position: bottom;\r\n}\r\n\r\n.menu {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    width: 100%;\r\n    height: 80px;\r\n    border-bottom: 1px solid var(--dark-color);\r\n    transition: var(--transition);\r\n}\r\n\r\n.menu:hover {\r\n    height: 120px;\r\n    color: var(--bg-color); \r\n}\r\n\r\n.menu:hover .arrow {\r\n    background-image: url('~/src/assets/white-arrow.svg');\r\n}\r\n\r\n.menu p, .menu h3 {\r\n    font-weight: 800;\r\n}\r\n\r\n.arrow {\r\n    width: 20px;\r\n    height: 16px;\r\n    background-image: url('~/src/assets/black-arrow.svg');\r\n    background-repeat: no-repeat;\r\n    transition: var(--transition);\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -284,7 +305,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../src/assets/background-image.svg */ "./src/assets/background-image.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../../src/assets/background-image.svg */ "./src/assets/background-image.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
@@ -1016,6 +1037,16 @@ module.exports = __webpack_require__.p + "background-image.svg";
 
 /***/ }),
 
+/***/ "./src/assets/background_menu.svg":
+/*!****************************************!*\
+  !*** ./src/assets/background_menu.svg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "background_menu.svg";
+
+/***/ }),
+
 /***/ "./src/assets/black-arrow.svg":
 /*!************************************!*\
   !*** ./src/assets/black-arrow.svg ***!
@@ -1230,4 +1261,4 @@ __webpack_require__.r(__webpack_exports__);
 (0,_components_jumboHeader__WEBPACK_IMPORTED_MODULE_4__.jumboHeader)();
 /******/ })()
 ;
-//# sourceMappingURL=bundle 10cdec6d0b1e26f2433a.js.map
+//# sourceMappingURL=bundle 068d5836836dadf7f1a7.js.map
