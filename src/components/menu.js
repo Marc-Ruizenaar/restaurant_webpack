@@ -2,11 +2,11 @@ import "../styles/menu.css";
 
 import { whiteArrow } from "../assets/white-arrow.svg";
 import { backArrow } from "../assets/black-arrow.svg";
-import { backgroundImage } from "../assets/background-image.svg";
+import { backgroundImage } from "../assets/background_menu.svg";
 
-export function menu() {
-  let menu = ["Appetizers", "Salads", "Entrees", "Desserts", "Drinks", "Wine"];
-  let amountOfMenuItems = [8, 10, 11, 7, 9, 5];
+export function menu() {  
+  let menu = ["Appetizers", "Entrees", "Mains", "Desserts", "Drinks"];
+  let amountOfMenuItems = [8, 10, 11, 7, 9];
 
   for (let i = 0; i < menu.length; i++) {
     const container = document.querySelector("#menuSection");

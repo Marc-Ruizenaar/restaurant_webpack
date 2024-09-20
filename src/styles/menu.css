@@ -11,14 +11,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: var(--transition);
 }
 
 .menu-layer:hover {
-    background-image: url('~/src/assets/background-image.svg');
+    background-image: url('~/src/assets/background_menu.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--red-color);
+}
+
+.menu-layer:hover:nth-child(1) {
+    background-position-y: 0px;
+}
+
+.menu-layer:hover:nth-child(2) {
+    background-position-y: -120px;
+}
+
+.menu-layer:hover:nth-child(3) {
+    background-position-y: -240px;
+}
+
+.menu-layer:hover:nth-child(4) {
+    background-position-y: -360px;
+}
+
+.menu-layer:hover:nth-child(5) {
+    background-position-y: -480px;
 }
 
 .menu {

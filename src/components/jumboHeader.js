@@ -21,7 +21,7 @@ export function jumboHeader() {
 
     // Create anchor tag
     const createLink = document.createElement("a");
-    createLink.setAttribute("href", "./menu");
+    createLink.setAttribute("href", "#menuSection");
     createLink.classList.add("menuLayer");
 
     // Create p element
