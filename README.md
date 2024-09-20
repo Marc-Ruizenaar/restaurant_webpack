@@ -1,2 +1,2 @@
-# restaurant_webpack
-A demo restaurant-themed frontend project built with HTML and bundled using Webpack.
+# UX and UI if from Dmitry Lauretsky
+# Find him here https://dribbble.com/shots/23704775-Restaurant-Website-Design-Concept

@@ -1,0 +1,35 @@
+#jumboHeader {
+    margin-top: 80px;
+}
+#jumboHeader .inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 80px;
+}
+
+#jumboHeader .inner .menuText {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(270deg);
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}
+
+#jumboHeader img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.menuLayer {
+    display: flex;
+    position: relative;
+}
