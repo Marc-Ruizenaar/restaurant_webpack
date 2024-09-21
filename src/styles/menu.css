@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .menu-layer:hover {
@@ -69,4 +70,19 @@
     background-image: url('~/src/assets/black-arrow.svg');
     background-repeat: no-repeat;
     transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+    .menu-layer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        height: 80px;
+    }
+
+    .menu-layer:hover {
+        background-position-y: 0!important;
+    }
 }

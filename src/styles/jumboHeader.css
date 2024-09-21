@@ -33,3 +33,26 @@
     display: flex;
     position: relative;
 }
+
+.youtubeVideo {
+    aspect-ratio: 16/9;
+}
+
+@media (max-width: 768px) {
+    #jumboHeader {
+        margin-top: 40px;
+    }
+    #jumboHeader .inner {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 0px;
+    }
+
+    #jumboHeader .inner .menuText {
+        display: none;
+    }
+
+    img.arrowMenu {
+        display: none;
+    }
+}

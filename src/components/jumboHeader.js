@@ -5,14 +5,19 @@ import { arrowMenu } from "../assets/arrow_see_menu.svg";
 
 export function jumboHeader() {
 
-    const jumboHeaderContainer = document.querySelector("#jumboHeader");
-    
+    const jumboHeaderContainer = document.querySelector("main");
+
+    // Create section
+    const createSection = document.createElement("section");
+    createSection.setAttribute("id", "jumboHeader");
+    createSection.classList.add("container");
+
     // Create div
     const createDiv = document.createElement("div");
     createDiv.classList.add("inner");
 
     // Create h2 element
-    const createH2 = document.createElement("h2");
+    const createH2 = document.createElement("h1");
     createH2.textContent = "Discover the flavors of Norway at our authentic Norwegian cuisine Restaurant";
 
     // Create p element
@@ -37,9 +42,7 @@ export function jumboHeader() {
     // Create big img element
     const createBigImg = document.createElement("img");
     createBigImg.setAttribute("src", './restaurant.jpg');
-
-    console.log(jumboHeaderContainer);
-
+    createBigImg.setAttribute("alt", "Restaurant Fjordsmaken");
 
     createDiv.appendChild(createH2);
     createDiv.appendChild(createP);
@@ -47,8 +50,7 @@ export function jumboHeader() {
     createLink.appendChild(createP2);
     createLink.appendChild(createImg);
 
-    jumboHeaderContainer.appendChild(createDiv);
-    jumboHeaderContainer.appendChild(createBigImg);
-
-
+    jumboHeaderContainer.appendChild(createSection);
+    createSection.appendChild(createDiv);
+    createSection.appendChild(createBigImg);
 }

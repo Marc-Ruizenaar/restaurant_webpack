@@ -1,0 +1,87 @@
+#contactUs {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+#contactUs .content, #contactUs .form {
+   width: 50%;
+}
+
+#contactUs .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contactUs .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-image: url('~/src/assets/background-image.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+#contactUs .form div label {
+    padding-bottom: 10px;
+}
+
+#contactUs .form form .input {
+   display: flex;
+   flex-direction: column;
+   gap: 5px
+}
+
+#contactUs .form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#contactUs .form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#contactUs .form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    max-width: max-content;
+    background-color: white;
+    color: var(--red-color);
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social_media {
+    display: flex;
+    gap: 10px;
+}
+
+.social_media img {
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width: 768px) {
+    #contactUs {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #contactUs .content, #contactUs .form {
+        width: 100%;
+    }
+}

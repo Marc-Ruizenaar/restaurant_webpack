@@ -8,12 +8,21 @@ export function menu() {
   let menu = ["Appetizers", "Entrees", "Mains", "Desserts", "Drinks"];
   let amountOfMenuItems = [8, 10, 11, 7, 9];
 
+  const main = document.querySelector("main");
+
+  // Create section
+  const createSection = document.createElement("section");
+  createSection.setAttribute("id", "menuSection");
+  main.appendChild(createSection);
+
+
   for (let i = 0; i < menu.length; i++) {
+
     const container = document.querySelector("#menuSection");
 
     // Create anchor (a) tag
     const createLink = document.createElement("a");
-    createLink.setAttribute("href", "#");
+    createLink.setAttribute("href", "");
     createLink.classList.add("menu-layer");
 
     // Create div inside the anchor
@@ -40,6 +49,5 @@ export function menu() {
     createLink.appendChild(createDiv);
 
     container.appendChild(createLink);
-
   }
 }
