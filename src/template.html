@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fjordsmaken | Restaurant</title>
+    <meta
+      name="description"
+      content="Fjordsmaken is a restaurant located in Norway. We serve the best food in town. Come and visit us today!"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      preload
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
@@ -19,26 +24,28 @@
       <div class="logo">
         <span>
           <h2 onclick="loadPages('home')">Fjordsmaken</h2>
-            <div onclick="togglePopup()" class="hamburgerMenu">
+          <div onclick="togglePopup()" class="hamburgerMenu">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
-            </div>
-            <script>
+          </div>
+          <script>
             function togglePopup() {
-              const popup = document.querySelector('.popupMobile');
+              const popup = document.querySelector(".popupMobile");
               if (popup) {
-              popup.classList.toggle('active');
+                popup.classList.toggle("active");
 
-              const buttonClicks = document.querySelectorAll('.left_nav button');
-              buttonClicks.forEach((button) => {
-                button.addEventListener('click', () => {
-                  popup.classList.remove('active');
+                const buttonClicks = document.querySelectorAll(
+                  ".left_nav button"
+                );
+                buttonClicks.forEach((button) => {
+                  button.addEventListener("click", () => {
+                    popup.classList.remove("active");
+                  });
                 });
-              });
               }
             }
-            </script>
+          </script>
         </span>
       </div>
       <nav>
@@ -50,14 +57,17 @@
         </div>
 
         <div class="right_nav">
-          <p>Book a table:</p><a href="tel:+31628672650">+31 6 286 726 50</a>
+          <p>Book a table:</p>
+          <a
+            aria-label="Number to book table +31 6 286 726 50"
+            href="tel:+31628672650"
+            >+31 6 286 726 50</a
+          >
         </div>
       </nav>
     </header>
 
-    <main>
-      
-    </main>
+    <main></main>
 
     <footer>
       <div class="container">

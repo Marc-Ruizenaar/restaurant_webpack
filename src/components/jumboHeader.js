@@ -27,6 +27,7 @@ export function jumboHeader() {
     // Create anchor tag
     const createLink = document.createElement("a");
     createLink.setAttribute("href", "#menuSection");
+    createLink.setAttribute("aria-label", "See menu");
     createLink.classList.add("menuLayer");
 
     // Create p element
@@ -36,7 +37,7 @@ export function jumboHeader() {
 
     // Create img element
     const createImg = document.createElement("img");
-    createImg.setAttribute("src", './Arrow_see_menu.svg');
+    createImg.setAttribute("src", './arrow_see_menu.svg');
     createImg.classList.add("arrowMenu");
 
     // Create big img element
