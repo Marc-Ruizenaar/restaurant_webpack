@@ -4,23 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fjordsmaken | Restaurant</title>
+    <meta
+      name="description"
+      content="Fjordsmaken is a restaurant located in Norway. We serve the best food in town. Come and visit us today!"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      preload
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
 
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
-  <script defer src="bundle%2064bac32f7d0003132025.js"></script></head>
+  <script defer src="bundle%200be0700482839503ab85.js"></script></head>
   <body>
     <header class="popupMobile">
-      <button onclick="loadPages('home')" class="logo">
+      <div class="logo">
         <span>
-          <h2>Fjordsmaken</h2>
+          <h2 onclick="loadPages('home')">Fjordsmaken</h2>
+          <div onclick="togglePopup()" class="hamburgerMenu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <script>
+            function togglePopup() {
+              const popup = document.querySelector(".popupMobile");
+              if (popup) {
+                popup.classList.toggle("active");
+
+                const buttonClicks = document.querySelectorAll(
+                  ".left_nav button"
+                );
+                buttonClicks.forEach((button) => {
+                  button.addEventListener("click", () => {
+                    popup.classList.remove("active");
+                  });
+                });
+              }
+            }
+          </script>
         </span>
-      </button>
+      </div>
       <nav>
         <div class="left_nav">
           <button onclick="loadPages('home');">Home</button>
@@ -30,14 +57,17 @@
         </div>
 
         <div class="right_nav">
-          <a href="tel:+31628672650">Book a table: +31 6 286 726 50</a>
+          <p>Book a table:</p>
+          <a
+            aria-label="Number to book table +31 6 286 726 50"
+            href="tel:+31628672650"
+            >+31 6 286 726 50</a
+          >
         </div>
       </nav>
     </header>
 
-    <main>
-      
-    </main>
+    <main></main>
 
     <footer>
       <div class="container">
