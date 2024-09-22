@@ -266,7 +266,7 @@ function jumboHeader() {
 
   // Create img element
   var createImg = document.createElement("img");
-  createImg.setAttribute("src", './Arrow_see_menu.svg');
+  createImg.setAttribute("src", './arrow_see_menu.svg');
   createImg.classList.add("arrowMenu");
 
   // Create big img element
@@ -2395,4 +2395,4 @@ function togglePopup() {
 }
 /******/ })()
 ;
-//# sourceMappingURL=bundle 0be0700482839503ab85.js.map
+//# sourceMappingURL=bundle 49ccee87cd9f18e6977e.js.map
