@@ -604,7 +604,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../../src/assets/background-image.svg */ "./src/assets/background-image.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../src/assets/background-image.svg */ "./src/assets/background-image.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
@@ -721,7 +721,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../../src/assets/arrow_down.svg */ "./src/assets/arrow_down.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../src/assets/arrow_down.svg */ "./src/assets/arrow_down.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
@@ -879,9 +879,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../../src/assets/background_menu.svg */ "./src/assets/background_menu.svg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../../src/assets/white-arrow.svg */ "./src/assets/white-arrow.svg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../../src/assets/black-arrow.svg */ "./src/assets/black-arrow.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../src/assets/background_menu.svg */ "./src/assets/background_menu.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../src/assets/white-arrow.svg */ "./src/assets/white-arrow.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../src/assets/black-arrow.svg */ "./src/assets/black-arrow.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
@@ -1002,7 +1002,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../../src/assets/background_menu.svg */ "./src/assets/background_menu.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../src/assets/background_menu.svg */ "./src/assets/background_menu.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
@@ -1102,7 +1102,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../../src/assets/background-image.svg */ "./src/assets/background-image.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../src/assets/background-image.svg */ "./src/assets/background-image.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
@@ -2145,13 +2145,73 @@ module.exports = __webpack_require__.p + "facebook_icon.svg";
 
 /***/ }),
 
-/***/ "./src/assets/favicon.png":
-/*!********************************!*\
-  !*** ./src/assets/favicon.png ***!
-  \********************************/
+/***/ "./src/assets/favicon/android-chrome-192x192.png":
+/*!*******************************************************!*\
+  !*** ./src/assets/favicon/android-chrome-192x192.png ***!
+  \*******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "favicon.png";
+module.exports = __webpack_require__.p + "android-chrome-192x192.png";
+
+/***/ }),
+
+/***/ "./src/assets/favicon/android-chrome-512x512.png":
+/*!*******************************************************!*\
+  !*** ./src/assets/favicon/android-chrome-512x512.png ***!
+  \*******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "android-chrome-512x512.png";
+
+/***/ }),
+
+/***/ "./src/assets/favicon/apple-touch-icon.png":
+/*!*************************************************!*\
+  !*** ./src/assets/favicon/apple-touch-icon.png ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "apple-touch-icon.png";
+
+/***/ }),
+
+/***/ "./src/assets/favicon/favicon-16x16.png":
+/*!**********************************************!*\
+  !*** ./src/assets/favicon/favicon-16x16.png ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "favicon-16x16.png";
+
+/***/ }),
+
+/***/ "./src/assets/favicon/favicon-32x32.png":
+/*!**********************************************!*\
+  !*** ./src/assets/favicon/favicon-32x32.png ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "favicon-32x32.png";
+
+/***/ }),
+
+/***/ "./src/assets/favicon/favicon.ico":
+/*!****************************************!*\
+  !*** ./src/assets/favicon/favicon.ico ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "favicon.ico";
+
+/***/ }),
+
+/***/ "./src/assets/favicon/site.webmanifest":
+/*!*********************************************!*\
+  !*** ./src/assets/favicon/site.webmanifest ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "site.webmanifest";
 
 /***/ }),
 
@@ -2343,23 +2403,37 @@ module.exports = __webpack_require__.p + "white-arrow.svg";
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+(() => {
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
 /* harmony import */ var _assets_logo_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/logo.svg */ "./src/assets/logo.svg");
-/* harmony import */ var _assets_favicon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/favicon.png */ "./src/assets/favicon.png");
-/* harmony import */ var _pages_homePage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/homePage */ "./src/pages/homePage.js");
-/* harmony import */ var _pages_menuPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/menuPage */ "./src/pages/menuPage.js");
-/* harmony import */ var _pages_aboutPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/aboutPage */ "./src/pages/aboutPage.js");
-/* harmony import */ var _pages_contactPage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/contactPage */ "./src/pages/contactPage.js");
+/* harmony import */ var _assets_favicon_android_chrome_192x192_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/favicon/android-chrome-192x192.png */ "./src/assets/favicon/android-chrome-192x192.png");
+/* harmony import */ var _assets_favicon_android_chrome_512x512_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/favicon/android-chrome-512x512.png */ "./src/assets/favicon/android-chrome-512x512.png");
+/* harmony import */ var _assets_favicon_apple_touch_icon_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/favicon/apple-touch-icon.png */ "./src/assets/favicon/apple-touch-icon.png");
+/* harmony import */ var _assets_favicon_favicon_16x16_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/favicon/favicon-16x16.png */ "./src/assets/favicon/favicon-16x16.png");
+/* harmony import */ var _assets_favicon_favicon_32x32_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/favicon/favicon-32x32.png */ "./src/assets/favicon/favicon-32x32.png");
+/* harmony import */ var _assets_favicon_favicon_ico__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/favicon/favicon.ico */ "./src/assets/favicon/favicon.ico");
+/* harmony import */ var _assets_favicon_site_webmanifest__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./assets/favicon/site.webmanifest */ "./src/assets/favicon/site.webmanifest");
+/* harmony import */ var _pages_homePage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/homePage */ "./src/pages/homePage.js");
+/* harmony import */ var _pages_menuPage__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/menuPage */ "./src/pages/menuPage.js");
+/* harmony import */ var _pages_aboutPage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/aboutPage */ "./src/pages/aboutPage.js");
+/* harmony import */ var _pages_contactPage__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/contactPage */ "./src/pages/contactPage.js");
 
 
 // Import svg
 
 
 // Import Favicon
+
+
+
+
+
+
 
 
 // Import pages
@@ -2372,13 +2446,13 @@ function loadPages(val) {
   content.innerHTML = ""; // Clear the content before loading a new page
 
   if (val === "home") {
-    (0,_pages_homePage__WEBPACK_IMPORTED_MODULE_3__.homePage)();
+    (0,_pages_homePage__WEBPACK_IMPORTED_MODULE_9__.homePage)();
   } else if (val === "menu") {
-    (0,_pages_menuPage__WEBPACK_IMPORTED_MODULE_4__.menuPage)();
+    (0,_pages_menuPage__WEBPACK_IMPORTED_MODULE_10__.menuPage)();
   } else if (val === "about") {
-    (0,_pages_aboutPage__WEBPACK_IMPORTED_MODULE_5__.aboutPage)();
+    (0,_pages_aboutPage__WEBPACK_IMPORTED_MODULE_11__.aboutPage)();
   } else if (val === "contact") {
-    (0,_pages_contactPage__WEBPACK_IMPORTED_MODULE_6__.contactPage)();
+    (0,_pages_contactPage__WEBPACK_IMPORTED_MODULE_12__.contactPage)();
   }
 }
 
@@ -2393,6 +2467,8 @@ function togglePopup() {
     popup.classList.toggle('active');
   }
 }
+})();
+
 /******/ })()
 ;
-//# sourceMappingURL=bundle 49ccee87cd9f18e6977e.js.map
+//# sourceMappingURL=bundle adde61a6926816fc9ee4.js.map

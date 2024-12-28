@@ -4,7 +4,13 @@ import * as css from "./styles/style.css";
 import logo from "./assets/logo.svg";
 
 // Import Favicon
-import favicon from "./assets/favicon.png";
+import androidChrome192 from "./assets/favicon/android-chrome-192x192.png";
+import androidChrome512 from "./assets/favicon/android-chrome-512x512.png";
+import appleTouchIcon from "./assets/favicon/apple-touch-icon.png";
+import favicon16 from "./assets/favicon/favicon-16x16.png";
+import favicon32 from "./assets/favicon/favicon-32x32.png";
+import faviconIco from "./assets/favicon/favicon.ico";
+import siteWebmanifest from "./assets/favicon/site.webmanifest";
 
 // Import pages
 import { homePage } from "./pages/homePage";

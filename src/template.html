@@ -1,109 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fjordsmaken | Restaurant</title>
-    <meta
-      name="description"
-      content="Fjordsmaken is a restaurant located in Norway. We serve the best food in town. Come and visit us today!"
-    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      preload
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fjordsmaken | Restaurant</title>
+  <meta name="description"
+    content="Fjordsmaken is a restaurant located in Norway. We serve the best food in town. Come and visit us today!" />
 
-    <link rel="icon" type="image/x-icon" href="/favicon.png" />
-  </head>
-  <body>
-    <header class="popupMobile">
-      <div class="logo">
-        <span>
-          <h2 onclick="loadPages('home')">Fjordsmaken</h2>
-          <div onclick="togglePopup()" class="hamburgerMenu">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <script>
-            function togglePopup() {
-              const popup = document.querySelector(".popupMobile");
-              if (popup) {
-                popup.classList.toggle("active");
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link preload href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
 
-                const buttonClicks = document.querySelectorAll(
-                  ".left_nav button"
-                );
-                buttonClicks.forEach((button) => {
-                  button.addEventListener("click", () => {
-                    popup.classList.remove("active");
-                  });
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+  <header class="popupMobile">
+    <div class="logo">
+      <span>
+        <h2 onclick="loadPages('home')">Fjordsmaken</h2>
+        <div onclick="togglePopup()" class="hamburgerMenu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <script>
+          function togglePopup() {
+            const popup = document.querySelector(".popupMobile");
+            if (popup) {
+              popup.classList.toggle("active");
+
+              const buttonClicks = document.querySelectorAll(
+                ".left_nav button"
+              );
+              buttonClicks.forEach((button) => {
+                button.addEventListener("click", () => {
+                  popup.classList.remove("active");
                 });
-              }
+              });
             }
-          </script>
+          }
+        </script>
+      </span>
+    </div>
+    <nav>
+      <div class="left_nav">
+        <button onclick="loadPages('home');">Home</button>
+        <button onclick="loadPages('menu');">Menu</button>
+        <button onclick="loadPages('about');">About</button>
+        <button onclick="loadPages('contact');">Contact us</button>
+      </div>
+
+      <div class="right_nav">
+        <p>Book a table:</p>
+        <a aria-label="Number to book table +31 6 286 726 50" href="tel:+31628672650">+31 6 286 726 50</a>
+      </div>
+    </nav>
+  </header>
+
+  <main></main>
+
+  <footer>
+    <div class="container">
+      <button onclick="loadPages('home')" class="logo_footer">
+        <span>
+          <h2>Fjordsmaken</h2>
         </span>
-      </div>
-      <nav>
-        <div class="left_nav">
-          <button onclick="loadPages('home');">Home</button>
-          <button onclick="loadPages('menu');">Menu</button>
-          <button onclick="loadPages('about');">About</button>
-          <button onclick="loadPages('contact');">Contact us</button>
+      </button>
+
+      <div class="inner_footer">
+        <div>
+          <p class="footer_heading">Everyday</p>
+          <p class="">
+            <b>Grenseveien 9, 133 Oslo<br />
+              08:00 - 23:00</b>
+          </p>
         </div>
-
-        <div class="right_nav">
-          <p>Book a table:</p>
-          <a
-            aria-label="Number to book table +31 6 286 726 50"
-            href="tel:+31628672650"
-            >+31 6 286 726 50</a
-          >
-        </div>
-      </nav>
-    </header>
-
-    <main></main>
-
-    <footer>
-      <div class="container">
-        <button onclick="loadPages('home')" class="logo_footer">
-          <span>
-            <h2>Fjordsmaken</h2>
-          </span>
-        </button>
-
-        <div class="inner_footer">
-          <div>
-            <p class="footer_heading">Everyday</p>
-            <p class="">
-              <b
-                >Grenseveien 9, 133 Oslo<br />
-                08:00 - 23:00</b
-              >
-            </p>
-          </div>
-          <div>
-            <p class="footer_heading">Contacts</p>
-            <a href=""><b>hi@Fjordsmaken.com</b></a>
-            <a href=""><b>+31 6 286 726 50</b></a>
-          </div>
-        </div>
-
-        <div class="sub_footer">
-          <p>2024 Fjordsmaken. All rights reserved</p>
-          <nav>
-            <a href="">Privacy Policy</a>
-            <a href="">Terms of Service</a>
-            <a href="">Partnership</a>
-            <a href="">Social media</a>
-          </nav>
+        <div>
+          <p class="footer_heading">Contacts</p>
+          <a href=""><b>hi@Fjordsmaken.com</b></a>
+          <a href=""><b>+31 6 286 726 50</b></a>
         </div>
       </div>
-    </footer>
-  </body>
+
+      <div class="sub_footer">
+        <p>2024 Fjordsmaken. All rights reserved</p>
+        <nav>
+          <a href="">Privacy Policy</a>
+          <a href="">Terms of Service</a>
+          <a href="">Partnership</a>
+          <a href="">Social media</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
